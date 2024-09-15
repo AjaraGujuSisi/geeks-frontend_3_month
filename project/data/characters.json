@@ -1,0 +1,63 @@
+[
+    {
+      "name": "Monkey D. Luffy",
+      "age": "19",
+      "photo": "https://assets.ggwp.id/2023/06/luffy-1-640x360.jpg",
+      "bio": " Тот кто станет следующим королем пиратов"
+    },
+    {
+      "name": "Zoro Pirate Hunter",
+      "age": "21",
+      "photo": "https://i.pinimg.com/736x/cd/22/79/cd2279096fb31aba44a46590ad80d504.jpg",
+      "bio": "Тот кто станет сильнейшим мечником"
+    },
+    {
+      "name": "Sanji Winsmoke",
+      "age": "21",
+      "photo": "https://www.meme-arsenal.com/memes/48510d8a2e82a78e4bb6b160536c2093.jpg",
+      "bio": "Тот кто найдет AllBlue"
+    },
+    {
+      "name": "Nami Navigator",
+      "age": "20",
+      "photo": "https://i.ytimg.com/vi/xOLskcHQNHo/maxresdefault.jpg",
+      "bio": "Та которая нарисует карту Мира"
+    },
+    {
+      "name": "God D. Usopp",
+      "age": "20",
+      "photo": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/05/Collage-Maker-30-May-2022-0158-PM.jpg",
+      "bio": "Тот за кем последует 10 млн воинов"
+    },
+    {
+      "name": "Sogeking",
+      "age": "???",
+      "photo": "https://steamuserimages-a.akamaihd.net/ugc/5064892931913154304/47E6C0131FDBE40D20DF120C6A61B7722A15205B/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false",
+      "bio": "???"
+    },
+    {
+        "name": "Franky",
+        "age": "36",
+        "photo": "https://pbs.twimg.com/media/EPjqrveUcAEuls4.jpg",
+        "bio": "Тот кто сделал корабль для следущего короля пиратов"
+    },
+    {
+        "name": "Brook",
+        "age": "96",
+        "photo": "https://i.ytimg.com/vi/ZB2C17Q3TS8/maxresdefault.jpg",
+        "bio": "Просто есть"
+    },
+    {
+        "name": "Robin",
+        "age": "30",
+        "photo": "https://i.pinimg.com/736x/f7/f0/c3/f7f0c3a27feca210f8b53edc33936ad8.jpg",
+        "bio": "Та которая узнает все о потерянном веке"
+    },
+    {
+        "name": "Tony Tony Chopper",
+        "age": "17",
+        "photo": "https://i.pinimg.com/474x/ee/ea/c5/eeeac538a158120d3cd47af79d4da82b.jpg",
+        "bio": "Тот за кем последует 10 млн воинов"
+    }
+  ]
+
