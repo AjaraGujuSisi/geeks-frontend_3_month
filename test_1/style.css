@@ -1,0 +1,11 @@
+
+#color-block {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.bg-color {
+    background-color: rgb(94, 252, 79);
+}
