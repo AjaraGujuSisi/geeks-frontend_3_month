@@ -50,3 +50,38 @@ tabContentItemsParent.onclick = (event) => {
         });
     }
 };
+
+//DRY - don't repeat yourself
+//KISS - keep it simple, stupid
+const somInput = document.querySelector('#som');
+const usdInput = document.querySelector('#usd');
+const beliInput = document.querySelector('#beli');
+
+const converter = (element, targetElement1, targetElement2) => {
+    element.oninput = () => {
+        const request = new XMLHttpRequest();
+        request.open('GET', '../data/convertor.json');
+        request.send();
+
+        request.onload = () => {
+            const data = JSON.parse(request.response);
+
+            if (element.id === "som") {
+                targetElement1.value = (element.value / data.usd).toFixed(2);
+                targetElement2.value = (element.value / data.beli).toFixed(2);
+            }
+            if (element.id === "usd") {
+                targetElement1.value = (element.value * data.usd).toFixed(2);
+                targetElement2.value = (element.value * data.beli).toFixed(2);
+            }
+            if (element.id === "beli") {
+                targetElement1.value = (element.value * data.beli).toFixed(2);
+                targetElement2.value = (element.value * data.usd).toFixed(2);
+            }
+        };
+    };
+};
+
+converter(somInput, usdInput, beliInput);
+converter(usdInput, somInput, beliInput);
+converter(beliInput, somInput, usdInput);
