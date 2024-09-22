@@ -76,7 +76,7 @@ const converter = (element, targetElement1, targetElement2) => {
             }
             if (element.id === "beli") {
                 targetElement1.value = (element.value * data.beli).toFixed(2);
-                targetElement2.value = (element.value * data.usd).toFixed(2);
+                targetElement2.value = (element.value / data.usd).toFixed(2);
             }
         };
     };
@@ -85,3 +85,44 @@ const converter = (element, targetElement1, targetElement2) => {
 converter(somInput, usdInput, beliInput);
 converter(usdInput, somInput, beliInput);
 converter(beliInput, somInput, usdInput);
+
+
+//CARD SWITCHER
+const card = document.querySelector('.card');
+const btnNext = document.querySelector('#btn-next');
+const btnPrev = document.querySelector('#btn-prev');
+
+let cardId = 199;
+
+
+const updateCard = (id) => {
+    fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
+        .then(res => res.json())
+        .then(data => {
+            card.innerHTML = `
+                    <p>${data.title}</p>
+                    <p style="color: ${data.completed ? 'green' : 'red'}">
+                        ${data.completed ? 'Completed' : 'Not completed'}
+                    </p>
+                    <span>Card ID: ${data.id}</span>
+                `;
+        });
+};
+
+updateCard(cardId);
+
+btnNext.onclick = () => {
+    cardId = (cardId % 200) + 1;
+    updateCard(cardId);
+};
+
+btnPrev.onclick = () => {
+    cardId = (cardId - 1 + 200 - 1) % 200 + 1;
+    updateCard(cardId);
+};
+
+fetch(`https://jsonplaceholder.typicode.com/posts`)
+    .then(res => res.json())
+    .then(data => {
+        console.log(data);
+    });
