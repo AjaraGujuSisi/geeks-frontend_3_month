@@ -1,0 +1,13 @@
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-items: center;
+}
+
+#square {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin-bottom: 20px;
+}
